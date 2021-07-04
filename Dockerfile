@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt update && apt install curl -y &&\\
+RUN apt update && apt install curl -y &&\
     mkdir /tmp/install-tl-unx && \
     curl -L ftp://tug.org/historic/systems/texlive/2021/install-tl-unx.tar.gz | \
     tar -xz -C /tmp/install-tl-unx --strip-components=1 && \
